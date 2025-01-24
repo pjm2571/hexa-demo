@@ -1,5 +1,7 @@
 package site.autoever.hexagonal.user.application.port.in;
 
+import site.autoever.hexagonal.user.application.domain.HexagonalUser;
+
 public interface RegisterUserUseCase {
-    void registerUser();
+    Long registerUser(HexagonalUser hexagonalUser);
 }
