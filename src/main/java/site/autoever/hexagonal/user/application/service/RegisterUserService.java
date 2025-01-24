@@ -15,6 +15,6 @@ class RegisterUserService implements RegisterUserUseCase {
 
     @Override
     public Long registerUser(HexagonalUser hexagonalUser) {
-        return 0L;
+        return registerUserPort.saveUser(hexagonalUser);
     }
 }
