@@ -5,7 +5,7 @@ import site.autoever.hexagonal.user.application.port.in.RegisterUserUseCase;
 import site.autoever.hexagonal.user.application.port.out.RegisterUserPort;
 
 @RequiredArgsConstructor
-public class RegisterService implements RegisterUserUseCase {
+class RegisterService implements RegisterUserUseCase {
 
     private final RegisterUserPort registerUserPort;
 
