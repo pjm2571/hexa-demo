@@ -15,7 +15,7 @@ public class RegisterUserController {
 
     @PostMapping("/register")
     public Long register(@RequestBody UserRequestDto userRequestDto) {
-        return registerUserUseCase.registerUser()
+        return registerUserUseCase.registerUser(userRequestDto.toEntity());
     }
 
 }
