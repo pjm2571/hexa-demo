@@ -18,4 +18,8 @@ public class UserRequestDto {
                 .role(this.role)
                 .build();
     }
+
+    public HexagonalUser from(HexagonalUser user) {
+        return user;
+    }
 }
