@@ -15,6 +15,8 @@ public class ModifyUserController {
 
 
     // domain converter
+    // 스프링 프레임워크에서 제공하는 persistance 기능이기 떄문에, 적용이 가능하다
+    // JPA를 쓰고 있기 때문에...!!!
 
     @PutMapping("/modify/{id}")
     public Boolean modify(@PathVariable("id") HexagonalUser user, @RequestBody UserRequestDto userRequestDto) {
